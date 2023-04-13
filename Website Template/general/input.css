@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+
+.sect-title {
+	@apply text-4xl;
+}
+
+.desc {
+	@apply text-lg max-w-xl;
+}
+
+section a.butt {
+	@apply bg-blue-800 p-3 rounded-full w-max inline-block text-white font-bold;
+}
+
+.desc {
+	@apply max-md:max-w-none;
+}

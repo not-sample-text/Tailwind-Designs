@@ -1,0 +1,45 @@
+.sect4 {
+	@apply p-10 flex flex-col gap-10;
+}
+
+.sect4 > div {
+	@apply flex flex-row gap-10 justify-center items-center;
+}
+.sect4 > div:nth-child(2) {
+	@apply flex-row-reverse;
+}
+
+.sect4 img {
+	@apply w-[25vw] rounded-3xl object-cover object-center;
+}
+
+.sect4 .choild {
+	@apply flex flex-col justify-center gap-5 max-w-sm;
+}
+
+@media (max-width: 1280px) {
+	.sect4 img {
+		width: 30vw;
+	}
+}
+
+@media (max-width: 1024px) {
+	.sect4 img {
+		width: 40vw;
+	}
+}
+
+@media (max-width: 768px) {
+	.sect4 > div,
+	.sect4 > div:nth-child(2) {
+		@apply flex-col-reverse;
+	}
+
+	.sect4 img {
+		@apply w-full;
+	}
+
+	.sect4 .choild {
+		@apply max-w-none;
+	}
+}

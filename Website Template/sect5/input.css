@@ -1,0 +1,12 @@
+.sect5 {
+	@apply bg-blue-800 text-white flex flex-row justify-center items-center p-10 gap-10 max-w-screen-xl mx-auto;
+	@apply max-md:flex-col;
+}
+.sect5 > div {
+	@apply flex flex-col justify-center gap-5;
+}
+
+.sect5 img {
+	@apply flex-1 max-w-xs;
+	@apply max-md:flex-col;
+}

@@ -1,0 +1,62 @@
+.sect4 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+
+.sect4 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.sect4 > div:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.sect4 img {
+  width: 25vw;
+  border-radius: 1.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.sect4 .choild {
+  display: flex;
+  max-width: 24rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+@media (max-width: 1280px) {
+  .sect4 img {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sect4 img {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .sect4 > div,
+	.sect4 > div:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .sect4 img {
+    width: 100%;
+  }
+
+  .sect4 .choild {
+    max-width: none;
+  }
+}

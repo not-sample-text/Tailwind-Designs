@@ -1,0 +1,46 @@
+.sect6 {
+	@apply bg-stone-800 text-white p-10 flex flex-col gap-10;
+}
+
+.sect6 > div:first-child {
+	@apply flex flex-col gap-5 mx-auto text-center;
+}
+
+.sect6 > div:nth-child(2) {
+	@apply flex gap-5 mx-auto;
+	@apply max-md:flex-col;
+}
+
+.sect6 .card {
+	@apply flex flex-1 flex-col bg-white text-[#333] rounded-3xl max-w-sm;
+	@apply max-md:max-w-none;
+}
+
+.sect6 .card-title {
+	@apply text-lg;
+}
+
+.card:hover .card-title,
+.card:hover .more {
+	@apply underline;
+}
+
+.sect6 .card > div {
+	@apply p-5 flex flex-col gap-5;
+}
+
+.sect6 .card img {
+	@apply rounded-t-3xl mx-auto;
+}
+
+.sect6 .card span {
+	@apply flex flex-row items-center gap-1;
+}
+
+.sect6 .card i {
+	@apply font-bold text-lg leading-snug text-emerald-500;
+}
+
+.sect6 .card .more {
+	@apply text-blue-800 font-semibold text-lg;
+}

@@ -1,0 +1,57 @@
+@import url(fonts.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: "gg sans";
+	font-weight: 600;
+	@apply bg-slate-300 dark:bg-stone-500;
+}
+
+.title {
+	@apply text-xs absolute font-black text-black dark:text-white dark:text-opacity-50 text-opacity-50;
+}
+
+.servers {
+	@apply h-screen w-max px-2 bg-slate-400 dark:bg-stone-900 flex flex-col items-center;
+}
+
+.sidebar-icon {
+	@apply relative;
+}
+
+.sidebar-icon i.ti {
+	@apply text-black bg-white dark:text-white dark:bg-stone-700 mt-5 cursor-pointer w-12 h-12 text-3xl rounded-3xl flex justify-center items-center transition-all hover:rounded-xl relative;
+}
+
+.sidebar-icon i.ti-download,
+.sidebar-icon i.ti-compass,
+.sidebar-icon i.ti-plus {
+	@apply text-emerald-500 hover:bg-emerald-500 hover:text-white;
+}
+
+.sidebar-icon i.ti-brand-among-us {
+	@apply hover:bg-indigo-500 hover:text-white;
+}
+
+.line {
+	@apply w-8 h-[2px] rounded-full bg-slate-200 dark:bg-stone-600 mt-5;
+}
+
+.tooltip {
+	@apply text-white bg-slate-400 dark:bg-stone-900 absolute flex justify-center items-center left-20 top-6 scale-0 transition-all rounded-lg;
+}
+
+.tooltip p {
+	@apply py-2 px-4 whitespace-nowrap;
+}
+
+.square {
+	rotate: 45deg;
+	@apply w-6 h-6 dark:bg-stone-900 bg-slate-400 absolute -z-10 -left-0.5 rounded-sm;
+}
+
+.active .tooltip {
+	@apply scale-100;
+}

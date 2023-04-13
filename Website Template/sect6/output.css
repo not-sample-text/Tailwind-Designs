@@ -1,0 +1,98 @@
+.sect6 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.sect6 > div:first-child {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: center
+}
+
+.sect6 > div:nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 1.25rem
+}
+
+@media not all and (min-width: 768px) {
+  .sect6 > div:nth-child(2) {
+    flex-direction: column
+  }
+}
+
+.sect6 .card {
+  display: flex;
+  max-width: 24rem;
+  flex: 1 1 0%;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity))
+}
+
+@media not all and (min-width: 768px) {
+  .sect6 .card {
+    max-width: none
+  }
+}
+
+.sect6 .card-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+
+.card:hover .card-title,
+.card:hover .more {
+  text-decoration-line: underline
+}
+
+.sect6 .card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem
+}
+
+.sect6 .card img {
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem
+}
+
+.sect6 .card span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem
+}
+
+.sect6 .card i {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 1.375;
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity))
+}
+
+.sect6 .card .more {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity))
+}

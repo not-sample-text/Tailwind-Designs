@@ -1,0 +1,119 @@
+header {
+	font-family: "Roboto";
+	@apply border-b select-none border-stone-300 text-[#333] bg-white;
+}
+
+header .container {
+	@apply flex flex-row items-center py-3 px-[7.5vw] justify-between w-full;
+}
+
+header .site-title {
+	@apply text-3xl flex flex-row items-center gap-x-2;
+}
+
+header .site-title span {
+	@apply text-4xl;
+}
+
+header .hamburger-menu {
+	@apply hidden w-8 h-8 relative;
+}
+
+header .line {
+	rotate: 0deg;
+	@apply h-[2px] w-full bg-[#53ce63] transition-all duration-500 ease-in-out absolute;
+}
+
+header .hamburger-menu .line:nth-child(1) {
+	@apply top-0;
+}
+header .hamburger-menu .line:nth-child(2) {
+	@apply top-1/2;
+}
+header .hamburger-menu .line:nth-child(3) {
+	@apply top-[calc(100%_-_2px)];
+}
+header .hamburger-menu.active .line:nth-child(1) {
+	rotate: 45deg;
+	@apply top-1/2;
+}
+
+header .hamburger-menu.active .line:nth-child(2) {
+	@apply opacity-0 w-0  top-1/2;
+}
+
+header .hamburger-menu.active .line:nth-child(3) {
+	rotate: -45deg;
+	@apply top-1/2;
+}
+
+header .link-list {
+	@apply bg-[#f5f6f9] capitalize flex flex-row justify-between px-[7.5vw];
+}
+
+header .link-list.active {
+	@apply flex;
+}
+
+header .link-list > div {
+	@apply flex flex-row items-center;
+}
+
+header .link-list a {
+	@apply inline-block p-3 bg-[#f5f6f9];
+}
+
+header .link-list a:hover {
+	@apply bg-[#333] text-[#f5f6f9];
+}
+
+header .link-list a.for-home {
+	@apply text-[#53ce63] font-bold;
+}
+
+header .link-list a.for-home:hover {
+	@apply text-[#f5f6f9] bg-[#53ce63];
+}
+
+header .link-list a.for-industry {
+	@apply font-bold;
+}
+
+@media (max-width: 1280px) {
+	header .hamburger-menu {
+		@apply inline-block;
+	}
+
+	header .link-list {
+		@apply flex-col hidden;
+	}
+
+	header .link-list > div {
+		@apply flex-col w-full;
+	}
+
+	header .link-list a {
+		@apply w-full;
+	}
+}
+
+@media (max-width: 1024px) {
+	header .link-list,
+	header .container {
+		@apply w-screen px-[5vw];
+	}
+}
+
+@media (max-width: 768px) {
+	header .link-list {
+		@apply px-0;
+	}
+
+	header .container {
+		@apply w-screen px-3;
+	}
+
+	header .link-list a {
+		@apply px-6;
+	}
+}

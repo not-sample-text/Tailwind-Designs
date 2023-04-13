@@ -1,0 +1,39 @@
+.sect2 {
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.sect2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sect2 .desc {
+  max-width: 36rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.sect2 picture,
+.sect2 picture img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .sect2 {
+    flex-direction: column;
+  }
+}

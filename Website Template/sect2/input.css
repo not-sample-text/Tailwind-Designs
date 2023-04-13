@@ -1,0 +1,24 @@
+.sect2 {
+	font-family: "Roboto";
+	@apply bg-[#333] text-white flex gap-x-32 p-10 justify-center items-center;
+}
+
+.sect2 > div {
+	@apply flex flex-col gap-5;
+	@apply mx-auto;
+}
+
+.sect2 .desc {
+	@apply max-w-xl text-lg;
+}
+
+.sect2 picture,
+.sect2 picture img {
+	@apply mx-auto;
+}
+
+@media (max-width: 1024px) {
+	.sect2 {
+		@apply flex-col;
+	}
+}

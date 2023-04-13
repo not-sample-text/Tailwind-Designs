@@ -1,0 +1,38 @@
+.sect3 {
+	font-family: "Roboto";
+	@apply bg-[#e5e5e5] text-[#333] text-center flex flex-col justify-center items-center gap-5 p-10;
+}
+
+.sect3 > div {
+	@apply flex flex-col mx-auto justify-center items-center;
+}
+
+.sect3 .icons {
+	@apply gap-5;
+}
+
+.sect3 .icons-row {
+	@apply flex justify-center items-center gap-5 flex-wrap;
+}
+
+.sect3 .icons-row > div {
+	@apply flex flex-col justify-center items-center;
+}
+
+.sect3 .icons img {
+	@apply w-[15vw];
+}
+
+@media (max-width: 640px) {
+	.sect3 .icons-row {
+		@apply gap-x-0;
+	}
+
+	.sect3 .icons-row > div {
+		@apply w-1/2;
+	}
+
+	.sect3 .icons img {
+		@apply w-[30vw];
+	}
+}

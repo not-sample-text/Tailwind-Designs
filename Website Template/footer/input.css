@@ -1,0 +1,52 @@
+footer {
+	font-family: "Roboto";
+	@apply text-[#333] bg-[#f5f6f9];
+}
+
+footer a {
+	@apply hover:underline;
+}
+
+footer .wrapper {
+	@apply flex flex-wrap py-8 gap-y-4 w-[75vw] mx-auto;
+}
+
+footer .header {
+	@apply font-bold capitalize;
+}
+
+footer .col {
+	@apply flex flex-col w-1/4;
+}
+
+footer .col > div {
+	@apply flex flex-col mb-4;
+}
+
+footer .col a {
+	@apply leading-10 inline-flex;
+}
+
+footer .socials > div {
+	@apply flex flex-row items-center gap-x-2;
+}
+
+footer span.ti {
+	@apply text-2xl;
+}
+
+@media (max-width: 1024px) {
+	footer .col {
+		@apply w-1/2;
+	}
+}
+
+@media (max-width: 640px) {
+	footer .wrapper {
+		@apply w-screen px-10;
+	}
+
+	footer.col {
+		@apply w-full justify-start;
+	}
+}

@@ -1,0 +1,108 @@
+@tailwind base;
+
+body {
+	font-family: Poppins;
+	@apply bg-white dark:bg-black flex select-none subpixel-antialiased;
+}
+
+.sidebar {
+	scrollbar-width: thin;
+	@apply bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 capitalize flex flex-col justify-between gap-5 p-5 overflow-y-auto overflow-x-hidden max-h-screen min-h-screen;
+}
+
+.sect {
+	@apply mb-10;
+}
+
+.sect-title {
+	@apply uppercase text-xs font-bold text-stone-500;
+}
+
+.sect-row {
+	@apply cursor-pointer flex gap-2.5 items-center mt-2.5 px-2 py-1 rounded-lg hover:bg-white dark:hover:bg-stone-600 dark:hover:text-white hover:text-indigo-600;
+}
+
+i.ti {
+	@apply cursor-pointer text-2xl;
+}
+
+.notifs {
+	@apply bg-indigo-100 text-indigo-600 dark:bg-indigo-600 dark:text-indigo-100 px-2 rounded-full font-semibold;
+}
+
+.alert {
+	@apply bg-red-100 text-red-700 dark:bg-red-600 dark:text-red-100;
+}
+
+.warning {
+	@apply bg-amber-100 text-amber-700 dark:bg-amber-600 dark:text-amber-100;
+}
+
+.user-sect {
+	@apply flex items-center justify-between rounded-lg px-2 py-1 bg-white dark:bg-stone-600;
+}
+
+i.ti-user-circle {
+	@apply text-3xl;
+}
+
+.sidebar::-webkit-scrollbar {
+	width: 9px;
+}
+.sidebar::-webkit-scrollbar-track {
+	background: transparent;
+}
+.sidebar::-webkit-scrollbar-thumb {
+	background-color: rgba(155, 155, 155, 0.5);
+}
+
+.nps {
+	@apply uppercase;
+}
+
+.user-name {
+	@apply text-lg font-bold;
+}
+
+.user-type {
+	@apply text-sm;
+}
+
+.menu {
+	@apply mb-10;
+}
+
+.menu i {
+	@apply text-4xl hover:text-indigo-600 p-2 rounded-lg hover:bg-white dark:hover:bg-stone-600 dark:hover:text-white;
+}
+.sidebar.closed {
+	@apply px-2.5;
+}
+
+.closed .menu {
+	@apply flex-col flex items-center;
+}
+
+.closed .sect-row {
+	@apply max-w-fit;
+}
+
+.closed .sect-row p {
+	@apply hidden;
+}
+.closed .sect {
+	@apply flex flex-col items-center;
+}
+
+.closed .user-sect {
+	@apply max-w-fit flex flex-col items-center;
+}
+
+.closed .last {
+	@apply flex flex-col items-center;
+}
+
+.closed .user-sect p,
+.closed .user-sect i.ti-selector {
+	@apply hidden;
+}

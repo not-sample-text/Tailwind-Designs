@@ -1,0 +1,61 @@
+.sect3 {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.sect3 > div {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect3 .icons {
+  gap: 1.25rem;
+}
+
+.sect3 .icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.sect3 .icons-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect3 .icons img {
+  width: 15vw;
+}
+
+@media (max-width: 640px) {
+  .sect3 .icons-row {
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+  }
+
+  .sect3 .icons-row > div {
+    width: 50%;
+  }
+
+  .sect3 .icons img {
+    width: 30vw;
+  }
+}

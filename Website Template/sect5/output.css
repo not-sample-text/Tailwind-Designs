@@ -1,0 +1,39 @@
+.sect5 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 1280px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media not all and (min-width: 768px) {
+  .sect5 {
+    flex-direction: column
+  }
+}
+
+.sect5 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem
+}
+
+.sect5 img {
+  max-width: 20rem;
+  flex: 1 1 0%
+}
+
+@media not all and (min-width: 768px) {
+  .sect5 img {
+    flex-direction: column
+  }
+}
