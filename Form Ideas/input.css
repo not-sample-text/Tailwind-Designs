@@ -5,26 +5,43 @@ body {
 }
 
 form {
-	@apply w-max border border-black p-10;
+	@apply flex flex-col justify-center items-center gap-10;
 }
 
-div.email {
-	@apply relative;
+p.title {
+	@apply text-center font-bold text-2xl;
 }
 
-div.email p {
-	@apply absolute left-2;
+div.captcha {
+	@apply flex justify-between;
 }
 
 form div {
 	@apply flex;
 }
 
-p.title {
-	@apply font-bold text-2xl;
+div.email {
+	@apply relative;
+}
+
+div.email label {
+	@apply absolute left-2.5 -z-10 bottom-1/2 translate-y-1/2 text-gray-500 px-1 bg-white text-sm transition-all;
 }
 
 input[type="email"],
 input[type="password"] {
-	@apply px-3 py-0 border-2 border-black focus:border-red-500;
+	@apply px-1 outline-none border-2 border-gray-500 rounded bg-transparent transition-all;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+	@apply border-cyan-500;
+}
+input[type="email"]:focus ~ label,
+input[type="password"]:focus ~ label {
+	@apply text-cyan-500 -top-3 scale-90 z-0 -translate-y-0;
+}
+
+button[type="submit"] {
+	@apply bg-cyan-500 text-white w-full py-3  rounded;
 }

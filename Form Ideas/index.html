@@ -16,14 +16,17 @@
 
   <form action="#" method="get">
     <p class="title">Welcome Back</p>
+
     <div class="email">
-      <input type="email" name="email" id="email">
-      <p>Email adress</p>
+      <input type="email" name="email" id="email" required>
+      <label for="email">Email adress</label>
     </div>
+
     <div class="captcha">
-      <input type="checkbox" name="captcha" id="captcha">
-      <p>I'm not a robot</p>
+      <input type="checkbox" name="captcha" id="captcha" required>
+      <label for="captcha">I'm not a robot</label>
     </div>
+
     <button type="submit">Continue</button>
   </form>
 </body>
