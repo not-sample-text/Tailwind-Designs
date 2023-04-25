@@ -45,7 +45,8 @@ input:focus {
 	@apply border-cyan-500;
 }
 
-input:focus ~ label {
+input[type="email"]:focus ~ label,
+input[type="password"]:focus ~ label {
 	@apply text-cyan-500 top-0 scale-90 z-10 -translate-y-1/2;
 }
 
