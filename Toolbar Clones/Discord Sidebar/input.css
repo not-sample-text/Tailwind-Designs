@@ -14,15 +14,15 @@ body {
 }
 
 .servers {
-	@apply h-screen w-max px-2 bg-slate-400 dark:bg-stone-900 flex flex-col items-center;
+	@apply h-screen w-max px-2 gap-5 bg-slate-400 dark:bg-stone-900 flex flex-col items-center;
 }
 
 .sidebar-icon {
-	@apply relative;
+	@apply relative first-of-type:mt-5;
 }
 
 .sidebar-icon i.ti {
-	@apply text-black bg-white dark:text-white dark:bg-stone-700 mt-5 cursor-pointer w-12 h-12 text-3xl rounded-3xl flex justify-center items-center transition-all hover:rounded-xl relative;
+	@apply text-black bg-white dark:text-white dark:bg-stone-700 cursor-pointer w-12 h-12 text-3xl rounded-3xl flex justify-center items-center transition-all hover:rounded-xl relative;
 }
 
 .sidebar-icon i.ti-download,
@@ -36,11 +36,11 @@ body {
 }
 
 .line {
-	@apply w-8 h-[2px] rounded-full bg-slate-200 dark:bg-stone-600 mt-5;
+	@apply w-8 h-[2px] rounded-full bg-slate-200 dark:bg-stone-600;
 }
 
 .tooltip {
-	@apply text-white bg-slate-400 dark:bg-stone-900 absolute flex justify-center items-center left-20 top-6 scale-0 transition-all rounded-lg;
+	@apply text-white bg-slate-400 dark:bg-stone-900 absolute flex justify-center items-center left-20 top-1/2 -translate-y-1/2 scale-0 transition-all rounded-lg;
 }
 
 .tooltip p {
