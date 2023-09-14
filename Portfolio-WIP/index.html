@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#home">
+          <i class="ti ti-home" title="Home"></i>
+          <div class="tooltip">
+            <div class="square"></div>
+            <p>Home</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <i class="ti ti-info-circle" title="About"></i>
+          <div class="tooltip">
+            <div class="square"></div>
+            <p>About</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          <i class="ti ti-icons" title="Projects"></i>
+          <div class="tooltip">
+            <div class="square"></div>
+            <p>Projects</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <i class="ti ti-at" title="Contact"></i>
+          <div class="tooltip">
+            <div class="square"></div>
+            <p>Contact</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="header" id="home">
+    <h1 class="title"><span class="hi">Welcome</span> to my story</h1>
+
+    <div>
+      <a href="#about"><button class="button begin">Shall we begin?</button></a>
+      <a href="#about"><i class="ti ti-chevrons-down"></i></a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div id="about">
+      <div>
+        <h2>Get to know me!</h2>
+        <img src="./assets/pexels.jpg" alt="">
+      </div>
+      <div>
+        <p>At 18 I got my first taste of web development through YouTube and started learning basic HTML.</p>
+        <p>Ever since, <span>I WAS HOOKED</span></p>
+      </div>
+    </div>
+    <div id="projects"></div>
+  </div>
+
+  <div class="footer">
+    <div id="contact"></div>
+    <!-- Thanks to <a href="http://fffuel.co">fffuel.co</a> for the waves svg! -->
+  </div>
+  <script src="./js/tooltip.js"></script>
+</body>
+
+</html>
