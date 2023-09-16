@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Slab&display=swap"
     rel="stylesheet">
+  <script defer src="./js/tooltip.js"></script>
+
   <title>Document</title>
 </head>
 
@@ -65,23 +67,111 @@
 
   <div class="main">
     <div id="about">
-      <div>
-        <h2>Get to know me!</h2>
-        <img src="./assets/pexels.jpg" alt="">
+
+      <div class="cat-title">
+        <h2>About me</h2>
+        <div class="line"></div>
       </div>
+
       <div>
-        <p>At 18 I got my first taste of web development through YouTube and started learning basic HTML.</p>
-        <p>Ever since, <span>I WAS HOOKED</span></p>
+
+        <div class="long-paragraph">
+          <p>At the age of 18, I stumbled upon web development through YouTube, and that's when my journey began. Today,
+            I specialize as a Frontend Web Developer, dedicated to crafting the front-end of websites and applications
+            to ensure their success. Feel free to explore my portfolio in the Projects section.
+          </p>
+          <p>
+            Beyond development, I'm passionate about photography, sharing my photos on Instagram, where I regularly
+            post valuable content. I'm also actively seeking new job opportunities that not only allow me to contribute
+            my skills but also provide room for personal and professional growth. Let's connect and explore
+            possibilities together!
+          </p>
+          <a href="#contact"><button>Contact</button></a>
+        </div>
+
+        <div>
+          <p class="tech">What I know:</p>
+          <div class="chips">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Tailwind</p>
+            <p>JavaScript</p>
+            <p>Node</p>
+            <p>Terminal</p>
+            <p>GIT</p>
+            <p>Github</p>
+            <p>Responsive Design</p>
+            <p>PHP Basics</p>
+            <p>Wordpress Basics</p>
+          </div>
+        </div>
+
       </div>
+
     </div>
-    <div id="projects"></div>
+    <div id="projects">
+
+      <div class="cat-title">
+        <h2>My Projects!</h2>
+        <div class="line"></div>
+      </div>
+
+      <div>
+        <div class="card">
+          <a href="https://github.com/not-sample-text/Tailwind-Designs/tree/master/Toolbar%20Clones/Discord%20Sidebar"
+            target="_blank">
+            <div class="bg-img-dis bg-img"></div>
+            <p class="card-title">Discord Sidebar Clone</p>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a inventore rerum ex
+              molestiae non modi expedita magnam ipsa sed pariatur autem repellat, natus magni?</p>
+          </a>
+        </div>
+        <div class="card">
+          <a target="_blank" href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/The%20Blob">
+            <div class="bg-img-blob bg-img"></div>
+            <p class="card-title">Mouse-Following Blob</p>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a inventore rerum ex
+              molestiae non modi expedita magnam ipsa sed pariatur autem repellat, natus magni?</p>
+          </a>
+        </div>
+        <div class="card">
+          <a target="_blank"
+            href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Weather%20App%20Web">
+            <div class="bg-img-weather bg-img"></div>
+            <p class="card-title">Local Weather App</p>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a inventore rerum ex
+              molestiae non modi expedita magnam ipsa sed pariatur autem repellat, natus magni?</p>
+          </a>
+        </div>
+        <div class="card">
+          <a target="_blank"
+            href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/hamburger%20menu">
+            <div class="bg-img-menu bg-img"></div>
+
+            <p class="card-title">Hamburger Menu</p>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a inventore rerum ex
+              molestiae non modi expedita magnam ipsa sed pariatur autem repellat, natus magni?</p>
+          </a>
+        </div>
+        <div class="card">
+          <a target="_blank"
+            href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Clock%20Screen%20Saver">
+            <div class="bg-img-clock bg-img"></div>
+            <p class="card-title">Clock Screen Saver</p>
+            <p class="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a inventore rerum ex
+              molestiae non modi expedita magnam ipsa sed pariatur autem repellat, natus magni?</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <div class="footer">
     <div id="contact"></div>
-    <!-- Thanks to <a href="http://fffuel.co">fffuel.co</a> for the waves svg! -->
+    <!-- Thanks to <a href="http://fffuel.co" class="underline text-violet-600 dark:text-violet-400">fffuel.co</a> for the cool waves svg! -->
   </div>
-  <script src="./js/tooltip.js"></script>
+
 </body>
 
 </html>

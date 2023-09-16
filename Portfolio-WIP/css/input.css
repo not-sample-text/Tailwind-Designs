@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	@apply overflow-x-hidden text-lg font-["poppins"] dark:text-white dark:bg-stone-800;
+	@apply flex flex-col bg-stone-100 overflow-x-hidden text-lg font-["poppins"] dark:text-white dark:bg-stone-800;
 }
 
 /* landing page */
@@ -57,6 +57,10 @@ nav {
 	@apply fixed top-1/2 right-8 text-3xl bg-white dark:bg-stone-800 dark:bg-opacity-50 bg-opacity-50 p-2 border-2 border-black dark:border-white rounded-full;
 }
 
+nav ul {
+	@apply flex flex-col gap-2;
+}
+
 nav ul li {
 	@apply relative;
 }
@@ -66,11 +70,11 @@ nav ul li {
 }
 
 .tooltip p {
-	@apply text-xl bg-indigo-300 dark:bg-indigo-900 px-2 py-1 rounded-lg;
+	@apply text-xl bg-indigo-400 dark:bg-indigo-900 px-2 py-1 rounded-lg;
 }
 
 .square {
-	@apply w-4 h-4 rounded-sm bg-indigo-300 dark:bg-indigo-900 absolute -z-10 rotate-45 top-2 right-0.5;
+	@apply w-4 h-4 rounded-sm bg-indigo-400 dark:bg-indigo-900 absolute -z-10 rotate-45 top-2 right-0.5;
 }
 
 .hovered .tooltip {
@@ -78,6 +82,95 @@ nav ul li {
 }
 
 /* about section */
+
 div#about {
-	@apply flex;
+	@apply flex flex-col mx-60;
 }
+
+h2 {
+	@apply text-5xl text-center;
+}
+
+div.cat-title {
+	@apply my-10 flex flex-col items-center gap-5;
+}
+
+div.line {
+	@apply w-32 h-1.5 bg-indigo-600 dark:bg-indigo-400 rounded-full;
+}
+
+div#about > div:nth-of-type(2) {
+	@apply flex flex-row gap-10;
+}
+
+div.long-paragraph {
+	@apply max-w-prose flex flex-col gap-2.5;
+}
+
+div.long-paragraph p {
+	@apply leading-8;
+}
+
+div.long-paragraph button {
+	@apply bg-indigo-600 text-white rounded-md w-max px-6 py-2 text-base uppercase font-bold tracking-widest;
+}
+
+div.long-paragraph a {
+	@apply h-max w-max mt-5;
+}
+
+p.tech {
+	@apply text-2xl mb-5;
+}
+
+div.chips p {
+	@apply bg-stone-300 dark:bg-stone-600 px-4 py-2 inline-block rounded-md mb-4 mr-4 text-xl;
+}
+
+/* projects */
+
+div#projects {
+	@apply flex flex-col mx-60;
+}
+
+div#projects > div:nth-of-type(2) {
+	@apply flex flex-row gap-10 flex-wrap justify-center;
+}
+div.card {
+	@apply w-96 bg-stone-300 dark:bg-stone-600 rounded-xl shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.5)] p-5;
+}
+
+div.bg-img {
+	@apply w-full aspect-video bg-cover bg-center rounded-xl;
+}
+
+div.bg-img-dis {
+	background-position: 50% 0%;
+	background-image: url("../assets/discord.png");
+}
+
+div.bg-img-blob {
+	background-image: url("../assets/blob.png");
+}
+
+div.bg-img-weather {
+	background-image: url("../assets/weather.png");
+}
+
+div.bg-img-clock {
+	background-image: url("../assets/clock.png");
+}
+
+div.bg-img-menu {
+	background-image: url("../assets/hamburger-menu.png");
+}
+
+p.card-title {
+	@apply text-2xl my-3 tracking-wider font-bold;
+}
+
+p.card-desc {
+	@apply leading-8;
+}
+
+/* footer */
