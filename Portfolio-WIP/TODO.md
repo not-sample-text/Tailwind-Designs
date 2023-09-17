@@ -7,10 +7,10 @@
 
 ## Footer
 
-- social media + icons
-- outside link target blank
 - credit fffuel for waves svg
-- full-size menu "roadmap" or something
+- ~~social media + icons~~
+- ~~outside link target blank~~
+- ~~full-size menu "roadmap" or something~~
 
 ## Misc.
 

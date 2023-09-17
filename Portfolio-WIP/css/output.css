@@ -716,6 +716,16 @@ video {
   z-index: -10;
 }
 
+.mx-60 {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -731,6 +741,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.-mr-1 {
+  margin-right: -0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -741,6 +755,10 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.ml-\[-0\.25rem\] {
+  margin-left: -0.25rem;
 }
 
 .mr-4 {
@@ -783,8 +801,16 @@ video {
   display: none;
 }
 
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
+}
+
 .aspect-auto {
   aspect-ratio: auto;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
 }
 
 .aspect-video {
@@ -1576,6 +1602,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[inset_0_0_0_0_rgb\(79\2c 70\2c 229\)\] {
+  --tw-shadow: inset 0 0 0 0 rgb(79,70,229);
+  --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1609,6 +1641,14 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-all {
@@ -1985,6 +2025,7 @@ div.chips p {
 div#projects {
   margin-left: 15rem;
   margin-right: 15rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -2018,8 +2059,12 @@ div.card {
   }
 }
 
+div.card:hover p.card-title {
+  text-decoration-line: underline;
+}
+
 div.bg-img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4/3;
   width: 100%;
   border-radius: 0.75rem;
   background-size: cover;
@@ -2052,7 +2097,6 @@ p.card-title {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
   letter-spacing: 0.05em;
 }
 
@@ -2062,9 +2106,74 @@ p.card-desc {
 
 /* footer */
 
+div.footer {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+div#contact i {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+div#contact ul li a {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: -0.25rem;
+  margin-left: -0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+  --tw-shadow: inset 0 0 0 0 rgb(79,70,229);
+  --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+div#contact ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: inset 200px 0 0 0 rgb(79,70,229);
+  --tw-shadow-colored: inset 200px 0 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+  div#contact ul li a {
+    --tw-text-opacity: 1;
+    color: rgb(129 140 248 / var(--tw-text-opacity));
+    --tw-shadow: inset 0 0 0 0 rgb(129,140,248);
+    --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  div#contact ul li a:hover {
+    --tw-shadow: inset 200px 0 0 0 rgb(129,140,248);
+    --tw-shadow-colored: inset 200px 0 0 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+div#contact ul li a {
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+form {
+  width: 24rem;
+}
+
 .hover\:shadow-\[0px_0px_10px_0px_rgba\(255\2c 255\2c 255\2c 0\.75\)\2c inset_0px_0px_10px_0px_rgba\(255\2c 255\2c 255\2c 0\.75\)\]:hover {
   --tw-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75),inset 0px 0px 10px 0px rgba(255,255,255,0.75);
   --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color), inset 0px 0px 10px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-\[inset_200px_0_0_0_rgb\(79\2c 70\2c 229\)\]:hover {
+  --tw-shadow: inset 200px 0 0 0 rgb(79,70,229);
+  --tw-shadow-colored: inset 200px 0 0 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2103,6 +2212,11 @@ p.card-desc {
     --tw-bg-opacity: 0.5;
   }
 
+  .dark\:text-indigo-400 {
+    --tw-text-opacity: 1;
+    color: rgb(129 140 248 / var(--tw-text-opacity));
+  }
+
   .dark\:text-violet-400 {
     --tw-text-opacity: 1;
     color: rgb(167 139 250 / var(--tw-text-opacity));
@@ -2116,6 +2230,18 @@ p.card-desc {
   .dark\:shadow-\[0px_0px_10px_5px_rgba\(255\2c 255\2c 255\2c 0\.5\)\] {
     --tw-shadow: 0px 0px 10px 5px rgba(255,255,255,0.5);
     --tw-shadow-colored: 0px 0px 10px 5px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .dark\:shadow-\[inset_0_0_0_0_rgb\(129\2c 140\2c 248\)\] {
+    --tw-shadow: inset 0 0 0 0 rgb(129,140,248);
+    --tw-shadow-colored: inset 0 0 0 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .dark\:hover\:shadow-\[inset_200px_0_0_0_rgb\(129\2c 140\2c 248\)\]:hover {
+    --tw-shadow: inset 200px 0 0 0 rgb(129,140,248);
+    --tw-shadow-colored: inset 200px 0 0 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
