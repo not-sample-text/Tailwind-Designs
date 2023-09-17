@@ -2161,10 +2161,6 @@ div#contact ul li a {
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-form {
-  width: 24rem;
-}
-
 .hover\:shadow-\[0px_0px_10px_0px_rgba\(255\2c 255\2c 255\2c 0\.75\)\2c inset_0px_0px_10px_0px_rgba\(255\2c 255\2c 255\2c 0\.75\)\]:hover {
   --tw-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75),inset 0px 0px 10px 0px rgba(255,255,255,0.75);
   --tw-shadow-colored: 0px 0px 10px 0px var(--tw-shadow-color), inset 0px 0px 10px 0px var(--tw-shadow-color);
