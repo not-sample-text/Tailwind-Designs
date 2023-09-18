@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Slab&display=swap"
     rel="stylesheet">
   <script defer src="./js/tooltip.js"></script>
+  <script defer src="./js/formclass.js"></script>
 
   <title>Document</title>
 </head>
@@ -180,16 +181,26 @@
 
       <div>
         <form action="" method="post" class="form-container">
-          <div class="flex-container">
-            <div class="flex-1">
-              <input type="text" placeholder="Name" class="form-input">
+          <div class="flex-container mb-6">
+            <div class="flex-1 relative group">
+              <input type="text" id="name" class="form-input">
+              <label for="name">Name</label>
             </div>
-            <div class="flex-1">
-              <input type="email" required placeholder="Email" class="form-input">
+            <div class="flex-1 relative">
+              <label for="email">Email</label>
+              <input type="email" required id="email" class="form-input">
             </div>
           </div>
-          <input type="text" required placeholder="Subject" class="form-input">
-          <textarea placeholder="Your Message" class="form-input"></textarea>
+          <div class="flex flex-col">
+            <div class="relative">
+              <label for="subject">Subject</label>
+              <input type="text" required id="subject" class="form-input mb-6">
+            </div>
+            <div class="relative">
+              <label for="messsage">Message</label>
+              <textarea class="form-input" id="messsage"></textarea>
+            </div>
+          </div>
           <button type="submit" value="Submit" class="submit-button">Send messsage</button>
         </form>
       </div>
