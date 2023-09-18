@@ -14,6 +14,16 @@ body {
 	@apply flex flex-col bg-stone-100 overflow-x-hidden text-lg font-["poppins"] dark:text-white dark:bg-stone-800;
 }
 
+button,
+button[type="submit"] {
+	@apply transition-all;
+}
+
+button:hover,
+button[type="submit"]:hover {
+	@apply scale-110;
+}
+
 /* landing page */
 
 div.header {
@@ -130,18 +140,14 @@ div.chips p {
 /* projects */
 
 div#projects {
-	@apply flex flex-col mx-60 mb-20;
+	@apply flex flex-col mx-60;
 }
 
 div#projects > div:nth-of-type(2) {
-	@apply flex flex-row gap-10 flex-wrap justify-center;
+	@apply flex flex-row gap-14 flex-wrap justify-center;
 }
 div.card {
-	@apply w-96 bg-stone-300 dark:bg-stone-600 rounded-xl shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.5)] p-5;
-}
-
-div.card:hover p.card-title {
-	@apply underline;
+	@apply w-96 bg-stone-300 dark:bg-stone-600 rounded-xl shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.5)] p-5 hover:scale-105 transition-transform;
 }
 
 div.bg-img {
@@ -170,7 +176,7 @@ div.bg-img-menu {
 }
 
 p.card-title {
-	@apply text-2xl my-3 tracking-wider;
+	@apply text-2xl my-3 tracking-widest;
 }
 
 p.card-desc {
@@ -178,6 +184,31 @@ p.card-desc {
 }
 
 /* footer */
+
+/* TODO move placeholder up */
+
+.form-container {
+	@apply max-w-md mx-auto space-y-4;
+}
+
+.flex-container {
+	@apply flex space-x-4;
+}
+
+.form-input {
+	@apply relative w-full px-4 py-2  text-black border-stone-400 border-2 rounded-md focus:ring focus:ring-indigo-300 focus:border-indigo-500 transition-all;
+}
+
+.form-input::placeholder {
+	position: absolute;
+	top: 2rem;
+	left: 4rem;
+}
+
+.submit-button {
+	letter-spacing: 0.25rem;
+	@apply block w-full px-4 py-2 uppercase  font-bold text-white rounded-md bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-50 transition-colors;
+}
 
 div.footer {
 	@apply px-60;
@@ -187,11 +218,11 @@ div#contact i {
 	@apply text-3xl;
 }
 
-div#contact ul li a {
-	@apply flex items-center gap-2 w-max;
+div#contact ul {
+	@apply flex gap-5 justify-center my-10 text-xl;
 }
 
 div#contact ul li a {
-	@apply dark:shadow-[inset_0_0_0_0_rgb(129,140,248)] shadow-[inset_0_0_0_0_rgb(79,70,229)] text-indigo-600 dark:text-indigo-400 -mr-1 ml-[-0.25rem] px-1 dark:hover:shadow-[inset_200px_0_0_0_rgb(129,140,248)] hover:shadow-[inset_200px_0_0_0_rgb(79,70,229)] hover:text-white;
-	transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	@apply flex items-center gap-2 py-1 px-3 w-max rounded-md dark:shadow-[inset_0_0_0_0_rgb(129,140,248)] shadow-[inset_0_0_0_0_rgb(79,70,229)] text-indigo-600 dark:text-indigo-400 -mr-1 ml-[-0.25rem] dark:hover:shadow-[inset_200px_0_0_0_rgb(129,140,248)] hover:shadow-[inset_200px_0_0_0_rgb(79,70,229)] hover:text-white;
+	transition: all 0.3s ease-in-out;
 }

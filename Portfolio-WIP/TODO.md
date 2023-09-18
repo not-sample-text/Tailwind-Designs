@@ -5,15 +5,8 @@
 - ADD MORE PROJECTS!!!!!
 - add project details
 
-## Footer
-
-- credit fffuel for waves svg
-- ~~social media + icons~~
-- ~~outside link target blank~~
-- ~~full-size menu "roadmap" or something~~
-
 ## Misc.
 
 - add thing about doing beginner design but better dev than designer
-- re-read texts
-- spell-check
+- ~~re-read texts~~
+- ~~spell-check~~
