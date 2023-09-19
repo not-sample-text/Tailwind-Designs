@@ -25,12 +25,6 @@ button[type="submit"]:hover {
 	@apply scale-110;
 }
 
-div.chapter {
-	@apply flex flex-col px-32;
-	@apply max-lg:px-20;
-	@apply max-md:px-5;
-}
-
 h2 {
 	@apply text-5xl text-center;
 	@apply max-md:text-3xl;
@@ -155,14 +149,13 @@ div.chips p {
 }
 
 /* projects */
-div#projects {
-	@apply max-2xl:px-20;
-}
+
 div#projects > div:nth-of-type(2) {
 	@apply flex flex-row gap-14 flex-wrap justify-center;
 }
 div.card {
-	@apply max-w-sm bg-stone-300 dark:bg-stone-600 rounded-xl shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.5)] p-5 hover:scale-105 transition-transform;
+	@apply w-96 bg-stone-300 dark:bg-stone-600 rounded-xl shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:shadow-[0px_0px_10px_5px_rgba(255,255,255,0.5)] p-5 hover:scale-105 transition-transform;
+	@apply max-md:flex-grow max-md:max-w-md;
 }
 
 div.bg-img {
@@ -200,7 +193,7 @@ p.card-desc {
 
 /* footer */
 
-:focus {
+.form-input:focus {
 	outline: none;
 	box-shadow: none;
 	border-color: transparent;
@@ -254,4 +247,10 @@ div#contact ul li a {
 
 div#contact ul li a p {
 	@apply max-md:hidden;
+}
+
+div.chapter {
+	@apply flex flex-col px-32;
+	@apply max-lg:px-20;
+	@apply max-md:px-5;
 }
