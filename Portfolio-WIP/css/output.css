@@ -1163,6 +1163,10 @@ video {
   cursor: pointer;
 }
 
+.cursor-text {
+  cursor: text;
+}
+
 .resize {
   resize: both;
 }
@@ -2475,6 +2479,7 @@ label {
   top: 0.5rem;
   left: 0.5rem;
   z-index: 10;
+  cursor: text;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 1.25rem;

@@ -216,7 +216,7 @@ div.footer {
 }
 
 label {
-	@apply text-stone-500 text-xl absolute px-1 z-10 top-2 left-2 transition-all;
+	@apply cursor-text text-stone-500 text-xl absolute px-1 z-10 top-2 left-2 transition-all;
 }
 
 label.focused {
