@@ -1,0 +1,8 @@
+[19-Sep-2023 21:43:56 UTC] PHP Warning:  mail(): Found numeric header (0) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:43:56 UTC] PHP Warning:  mail(): Found numeric header (1) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:43:56 UTC] PHP Warning:  mail(): Found numeric header (2) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:43:56 UTC] PHP Warning:  mail(): Found numeric header (3) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:48:09 UTC] PHP Warning:  mail(): Found numeric header (0) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:48:09 UTC] PHP Warning:  mail(): Found numeric header (1) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:48:09 UTC] PHP Warning:  mail(): Found numeric header (2) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
+[19-Sep-2023 21:48:09 UTC] PHP Warning:  mail(): Found numeric header (3) in /home/circuit1/hello.xab3.ro/send-email.php on line 69
