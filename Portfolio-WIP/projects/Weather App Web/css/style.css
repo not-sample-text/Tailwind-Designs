@@ -1,0 +1,93 @@
+:root {
+	--bg-clr: #ffffff;
+	--main-clr: #16161daa;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		color: white;
+	}
+
+	:root {
+		--bg-clr: #16161d;
+		--main-clr: #ffffffaa;
+	}
+
+	img {
+		filter: invert(1);
+	}
+}
+
+body {
+	/*Display stuff*/
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+	/*Box model stuff*/
+	height: 100vh;
+	margin: 0;
+	color: black;
+	background-color: var(--bg-clr);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+	filter: invert(0);
+}
+.container {
+	/*Display stuff*/
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	/*Box model stuff*/
+	width: 500px;
+	aspect-ratio: 1;
+	padding: 2.5em;
+	background-color: var(--main-clr);
+	border-radius: 10%;
+	/*Miscellaneous*/
+	gap: 2.5em;
+}
+
+.temp {
+	/*Typography stuff*/
+	font-size: 5rem;
+	text-align: center;
+}
+
+div.temp-icon,
+div.weather-icon {
+	/*Display stuff*/
+	display: flex;
+	align-items: end;
+	justify-content: center;
+}
+
+#clothing-image,
+#weather-image {
+	/*Box model stuff*/
+	width: 100%;
+	/*Miscellaneous*/
+	aspect-ratio: 1;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		scale: 0.9;
+	}
+}
+@media (max-width: 992px) {
+	.container {
+		scale: 0.8;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		scale: 0.6;
+	}
+}
+@media (max-width: 576px) {
+	.container {
+		scale: 0.5;
+	}
+}
