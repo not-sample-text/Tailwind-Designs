@@ -45,14 +45,16 @@ div.header {
 	@apply w-screen h-screen flex flex-col justify-center gap-32 items-center bg-center bg-cover bg-no-repeat;
 }
 
-h1.title {
-	@apply text-5xl flex flex-col items-center py-5 px-2.5 font-["roboto_slab"];
-	@apply max-md:text-4xl;
+div.head-img {
+	@apply flex flex-row w-screen justify-around;
 }
 
-span.hi {
-	@apply text-9xl;
-	@apply max-md:text-7xl;
+div.head-img img {
+	@apply aspect-square w-80 rounded-full shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,1)];
+}
+
+div.head-text {
+	@apply flex flex-col;
 }
 
 .ti-chevrons-down {
@@ -69,7 +71,7 @@ span.hi {
 	}
 }
 
-div.header > div {
+div.header > div.button-next {
 	@apply flex flex-col justify-center items-center gap-5 text-xl;
 }
 

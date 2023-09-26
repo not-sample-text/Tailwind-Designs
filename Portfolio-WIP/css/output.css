@@ -1578,11 +1578,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-2\.5 {
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1659,10 +1654,6 @@ video {
 
 .font-\[\"poppins\"\] {
   font-family: "poppins";
-}
-
-.font-\[\"roboto_slab\"\] {
-  font-family: "roboto slab";
 }
 
 .text-2xl {
@@ -1843,6 +1834,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1876,6 +1873,11 @@ video {
 
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-2xl {
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -2047,36 +2049,32 @@ div.header {
   background-repeat: no-repeat;
 }
 
-h1.title {
+div.head-img {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.head-img img {
+  aspect-ratio: 1 / 1;
+  width: 20rem;
+  border-radius: 9999px;
+  --tw-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+  --tw-shadow-colored: 0px 0px 20px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+  div.head-img img {
+    --tw-drop-shadow: drop-shadow(0 0 10px rgba(255,255,255,1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+}
+
+div.head-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-  font-family: "roboto slab";
-  font-size: 3rem;
-  line-height: 1;
-}
-
-@media not all and (min-width: 768px) {
-  h1.title {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
-span.hi {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-@media not all and (min-width: 768px) {
-  span.hi {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
 }
 
 .ti-chevrons-down {
@@ -2106,7 +2104,7 @@ span.hi {
   }
 }
 
-div.header > div {
+div.header > div.button-next {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2805,6 +2803,11 @@ div.chapter {
 
   .dark\:outline-stone-800 {
     outline-color: #292524;
+  }
+
+  .dark\:drop-shadow-\[0_0_10px_rgba\(255\2c 255\2c 255\2c 1\)\] {
+    --tw-drop-shadow: drop-shadow(0 0 10px rgba(255,255,255,1));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
   .dark\:hover\:shadow-\[inset_200px_0_0_0_rgb\(129\2c 140\2c 248\)\]:hover {
