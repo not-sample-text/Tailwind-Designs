@@ -42,19 +42,24 @@ div.line {
 
 div.header {
 	background-image: url(../assets/sssurf.svg);
-	@apply w-screen h-screen flex flex-col justify-center gap-32 items-center bg-center bg-cover bg-no-repeat;
+	@apply w-screen h-screen flex flex-col justify-evenly items-center bg-center bg-cover bg-no-repeat;
 }
 
 div.head-img {
-	@apply flex flex-row w-screen justify-around;
-}
-
-div.head-img img {
-	@apply aspect-square w-80 rounded-full shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,1)];
+	@apply flex flex-row w-screen justify-around px-32 gap-10;
+	@apply max-xl:flex-col max-xl:items-center;
+	@apply max-lg:px-20;
+	@apply max-md:px-5;
 }
 
 div.head-text {
-	@apply flex flex-col;
+	@apply flex flex-col justify-between;
+	@apply max-xl:gap-10;
+}
+
+div.head-text > div p {
+	@apply mb-2.5 text-2xl;
+	@apply max-md:text-lg;
 }
 
 .ti-chevrons-down {
