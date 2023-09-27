@@ -1043,6 +1043,14 @@ video {
   width: 100vw;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2877,6 +2885,16 @@ div.chapter {
 
   .max-xl\:text-inherit {
     color: inherit;
+  }
+}
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:w-40 {
+    width: 10rem;
+  }
+
+  .max-lg\:w-60 {
+    width: 15rem;
   }
 }
 
