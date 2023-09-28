@@ -55,12 +55,12 @@ div.head-img {
 div.head-text {
 	@apply flex flex-col justify-between;
 	@apply max-xl:gap-10;
-	@apply max-md:gap-5;
+	@apply max-md:gap-2.5;
 }
 
 div.head-text > div p {
 	@apply mb-2.5 text-2xl;
-	@apply max-md:text-lg;
+	@apply max-md:text-lg max-md:mb-1;
 }
 
 .ti-chevrons-down {

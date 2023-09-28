@@ -2118,7 +2118,7 @@ div.head-text {
 
 @media not all and (min-width: 768px) {
   div.head-text {
-    gap: 1.25rem;
+    gap: 0.625rem;
   }
 }
 
@@ -2130,6 +2130,7 @@ div.head-text > div p {
 
 @media not all and (min-width: 768px) {
   div.head-text > div p {
+    margin-bottom: 0.25rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
@@ -2940,8 +2941,17 @@ div.chapter {
     flex-direction: column;
   }
 
+  .max-md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .max-md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .max-md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
