@@ -55,6 +55,7 @@ div.head-img {
 div.head-text {
 	@apply flex flex-col justify-between;
 	@apply max-xl:gap-10;
+	@apply max-md:gap-5;
 }
 
 div.head-text > div p {
@@ -76,8 +77,9 @@ div.head-text > div p {
 	}
 }
 
-div.header > div.button-next {
+div.button-next {
 	@apply flex flex-col justify-center items-center gap-5 text-xl;
+	@apply max-md:-translate-y-1/4;
 }
 
 button.begin {
