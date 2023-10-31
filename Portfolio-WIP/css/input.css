@@ -79,7 +79,7 @@ div.head-text > div p {
 
 div.button-next {
 	@apply flex flex-col justify-center items-center gap-5 text-xl;
-	@apply max-md:-translate-y-1/4;
+	@apply max-md:-translate-y-1/2;
 }
 
 button.begin {
@@ -194,6 +194,10 @@ div.bg-img-clock {
 
 div.bg-img-menu {
 	background-image: url("../assets/hamburger-menu.png");
+}
+
+div.bg-img-binar {
+	background-image: url("../assets/binar-landing.png");
 }
 
 p.card-title {
