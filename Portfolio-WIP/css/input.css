@@ -89,7 +89,7 @@ button.begin {
 /* navigation */
 
 nav {
-	@apply fixed z-20 bottom-1/2 right-8 text-3xl bg-stone-100 dark:bg-stone-800 dark:bg-opacity-50 bg-opacity-50 p-2 border-2 border-black dark:border-white rounded-full;
+	@apply fixed z-20 bottom-1/2 right-8 text-3xl backdrop-blur bg-stone-100 dark:bg-stone-800 dark:bg-opacity-50 bg-opacity-50 p-2 border-2 border-black dark:border-white rounded-full;
 	@apply max-md:bottom-2 max-md:right-1/2 max-md:translate-x-1/2;
 }
 
