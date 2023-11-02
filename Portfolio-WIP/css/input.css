@@ -169,29 +169,8 @@ div.card a:nth-of-type(2) {
 	@apply hover:underline mt-5;
 }
 
-div.bg-img {
-	@apply w-full aspect-[4/3] bg-cover bg-center  rounded-xl;
-}
-
-div.bg-img-dis {
-	background-position: 50% 0%;
-	background-image: url("../assets/discord.png");
-}
-
-div.bg-img-blob {
-	background-image: url("../assets/blob.png");
-}
-
-div.bg-img-weather {
-	background-image: url("../assets/weather.png");
-}
-
-div.bg-img-clock {
-	background-image: url("../assets/clock.png");
-}
-
-div.bg-img-menu {
-	background-image: url("../assets/hamburger-menu.png");
+img.bg-img {
+	@apply w-full aspect-[4/3] object-cover object-center  rounded-xl;
 }
 
 p.card-title {

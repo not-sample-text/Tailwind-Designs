@@ -1006,12 +1006,20 @@ video {
   width: 1rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-60 {
+  width: 15rem;
 }
 
 .w-8 {
@@ -1041,14 +1049,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-60 {
-  width: 15rem;
 }
 
 .max-w-2xl {
@@ -2462,33 +2462,14 @@ div.card a:nth-of-type(2):hover {
   text-decoration-line: underline;
 }
 
-div.bg-img {
+img.bg-img {
   aspect-ratio: 4/3;
   width: 100%;
   border-radius: 0.75rem;
-  background-size: cover;
-  background-position: center;
-}
-
-div.bg-img-dis {
-  background-position: 50% 0%;
-  background-image: url("../assets/discord.png");
-}
-
-div.bg-img-blob {
-  background-image: url("../assets/blob.png");
-}
-
-div.bg-img-weather {
-  background-image: url("../assets/weather.png");
-}
-
-div.bg-img-clock {
-  background-image: url("../assets/clock.png");
-}
-
-div.bg-img-menu {
-  background-image: url("../assets/hamburger-menu.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 p.card-title {
@@ -2889,10 +2870,6 @@ div.chapter {
 }
 
 @media not all and (min-width: 1024px) {
-  .max-lg\:w-40 {
-    width: 10rem;
-  }
-
   .max-lg\:w-60 {
     width: 15rem;
   }
