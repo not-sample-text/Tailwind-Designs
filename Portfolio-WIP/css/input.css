@@ -46,10 +46,8 @@ div.header {
 }
 
 div.head-img {
-	@apply flex flex-row w-screen justify-around px-32 gap-10;
+	@apply flex flex-row justify-around gap-10;
 	@apply max-xl:flex-col max-xl:items-center;
-	@apply max-lg:px-20;
-	@apply max-md:px-5;
 }
 
 div.head-text {
@@ -58,7 +56,7 @@ div.head-text {
 	@apply max-md:gap-2.5;
 }
 
-div.head-text > div p {
+div.head-text > div {
 	@apply mb-2.5 text-2xl;
 	@apply max-md:text-lg max-md:mb-1;
 }
