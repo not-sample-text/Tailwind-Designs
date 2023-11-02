@@ -10,7 +10,6 @@
     rel="stylesheet">
   <script defer src="./js/tooltip.js"></script>
   <script defer src="./js/formclass.js"></script>
-  <script defer src="./js/typewriter.js"></script>
 
   <title>Document</title>
 </head>
@@ -62,7 +61,7 @@
 
     <div class="head-img">
       <img src="./assets/me_lol.jpg"
-        class="aspect-square w-80 max-lg:w-60 rounded-full shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,1)]"
+        class="aspect-square w-80 max-lg:w-60 max-md:w-52 rounded-full shadow-[0px_0px_20px_0px_rgba(0,0,0,0.5)] dark:drop-shadow-[0_0_10px_rgba(255,255,255,1)]"
         alt="">
       <div class="head-text">
         <p class="text-5xl max-xl:text-center max-md:text-3xl">Say hello to your new <span
@@ -71,13 +70,13 @@
           <p>I started web development at 18 through YouTube tutorials, now I'm a Frontend Web Developer.</p>
           <p>I tried design but excelled in coding. </p>
           <p>I'm also very much into photography, check out my <a href="https://www.instagram.com/tonny.2821/"
-              target="_blank" class=" underline">Instagram</a></p>
+              target="_blank" class=" underline">Instagram</a>!</p>
         </div>
       </div>
     </div>
 
     <div class="button-next">
-      <a href="#about"><button class="button begin">Shall we begin?</button></a>
+      <a href="#about"><button class="button begin">Interested?</button></a>
       <a href="#about"><i class="ti ti-chevrons-down"></i></a>
     </div>
   </div>
@@ -114,6 +113,7 @@
             <p>HTML</p>
             <p>CSS</p>
             <p>Tailwind</p>
+            <p>SCSS</p>
             <p>JavaScript</p>
             <p>Node</p>
             <p>Terminal</p>
@@ -136,6 +136,16 @@
       </div>
 
       <div>
+        <div class="card">
+          <a href="./projects/binarelectronics-landing/" target="_blank">
+            <div class="bg-img-binar bg-img"></div>
+            <p class="card-title">Binar Electronics Landing </p>
+            <p class="card-desc">Landing page for Binar Electronics. Made responsibly and responsively with HTML and
+              TailwindCSS <br> Fair warning, it only has light mode! </p>
+          </a>
+          <a href="https://github.com/not-sample-text/binarelectronics-landing" target="_blank">View Source code
+            &rarr;</a>
+        </div>
         <div class="card">
           <a href="./projects/Discord Sidebar/" target="_blank">
             <img src=" ./assets/discord.png" alt="" class="bg-img">
@@ -208,7 +218,7 @@
         <form action="" method="post" class="form-container">
           <div class="flex-container mb-6 max-md:flex-col">
             <div class="flex-1 relative group">
-              <input type="text" id="name" class="form-input">
+              <input type="text" required id="name" class="form-input">
               <label for="name">Name</label>
             </div>
             <div class="flex-1 relative">
@@ -223,7 +233,7 @@
             </div>
             <div class="relative">
               <label for="messsage">Message</label>
-              <textarea class="form-input" id="messsage"></textarea>
+              <textarea required class="form-input" id="messsage"></textarea>
             </div>
           </div>
           <button type="submit" value="Submit" class="submit-button">Send messsage</button>
@@ -258,7 +268,6 @@
       </ul>
     </div>
   </div>
-  <!-- Thanks to fffuel.co for the cool waves svg! -->
 
 </body>
 

@@ -1014,6 +1014,10 @@ video {
   width: 1.25rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1081,6 +1085,10 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
 }
 
 .flex-grow {
@@ -2116,6 +2124,12 @@ div.head-text {
   }
 }
 
+@media not all and (min-width: 768px) {
+  div.head-text {
+    gap: 0.625rem;
+  }
+}
+
 div.head-text > div p {
   margin-bottom: 0.625rem;
   font-size: 1.5rem;
@@ -2124,6 +2138,7 @@ div.head-text > div p {
 
 @media not all and (min-width: 768px) {
   div.head-text > div p {
+    margin-bottom: 0.25rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
@@ -2156,7 +2171,7 @@ div.head-text > div p {
   }
 }
 
-div.header > div.button-next {
+div.button-next {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2164,6 +2179,13 @@ div.header > div.button-next {
   gap: 1.25rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+@media not all and (min-width: 768px) {
+  div.button-next {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
 }
 
 button.begin {
@@ -2470,6 +2492,10 @@ img.bg-img {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+div.bg-img-binar {
+  background-image: url("../assets/binar-landing.png");
 }
 
 p.card-title {
@@ -2896,6 +2922,10 @@ div.chapter {
     display: none;
   }
 
+  .max-md\:w-52 {
+    width: 13rem;
+  }
+
   .max-md\:flex-grow {
     flex-grow: 1;
   }
@@ -2908,8 +2938,17 @@ div.chapter {
     flex-direction: column;
   }
 
+  .max-md\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .max-md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .max-md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

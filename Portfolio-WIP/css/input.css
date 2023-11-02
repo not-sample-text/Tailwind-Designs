@@ -55,11 +55,12 @@ div.head-img {
 div.head-text {
 	@apply flex flex-col justify-between;
 	@apply max-xl:gap-10;
+	@apply max-md:gap-2.5;
 }
 
 div.head-text > div p {
 	@apply mb-2.5 text-2xl;
-	@apply max-md:text-lg;
+	@apply max-md:text-lg max-md:mb-1;
 }
 
 .ti-chevrons-down {
@@ -76,8 +77,9 @@ div.head-text > div p {
 	}
 }
 
-div.header > div.button-next {
+div.button-next {
 	@apply flex flex-col justify-center items-center gap-5 text-xl;
+	@apply max-md:-translate-y-1/2;
 }
 
 button.begin {
@@ -171,6 +173,10 @@ div.card a:nth-of-type(2) {
 
 img.bg-img {
 	@apply w-full aspect-[4/3] object-cover object-center  rounded-xl;
+}
+
+div.bg-img-binar {
+	background-image: url("../assets/binar-landing.png");
 }
 
 p.card-title {
