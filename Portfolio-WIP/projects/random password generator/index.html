@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/vite-DcBtz0py.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  <script type="module" crossorigin src="/assets/index-eixQEb08.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/index-CB21N9G0.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-BEJrMbKE.css">
+</head>
+
+<body>
+    <div class="generator">
+
+        <div class="pass-area">
+            <input type="text" id="password-shown" value="wafer123" readonly />
+            <input type="password" id="password-hidden" value="wafer123" readonly />
+
+            <div>
+                <button id="copy">
+                    <div class="svg-container" id="copy-first"></div>
+                    <div class="svg-container" id="copy-last"></div>
+                </button>
+                <button id="visibility">
+                    <div class="svg-container" id="visibility-first"></div>
+                    <div class="svg-container" id="visibility-last"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="options">
+
+            <label for="length">
+                <div>
+                    Password Length
+                    <input type="number" name="length" id="length" value="8" min="8" max="128" autocomplete="off" />
+                </div>
+                <input type="range" id="length_range" name="length_range" value="8" min="8" max="128"
+                    autocomplete="off" />
+            </label>
+
+            <div>
+                <label for="uppercase">
+                    ABC
+                    <input type="checkbox" name="uppercase" id="uppercase" checked autocomplete="off" />
+                </label>
+                <label for="lowercase">
+                    abc
+                    <input type="checkbox" name="lowercase" id="lowercase" checked autocomplete="off" />
+                </label>
+                <label for="numbers">
+                    123
+                    <input type="checkbox" name="numbers" id="numbers" checked autocomplete="off" />
+                </label>
+                <label for="symbols">
+                    !@]
+                    <input type="checkbox" name="symbols" id="symbols" checked autocomplete="off" />
+                </label>
+            </div>
+
+        </div>
+        <button id="generate">Generate</button>
+    </div>
+
+</body>
+
+</html>

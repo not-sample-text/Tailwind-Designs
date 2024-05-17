@@ -1,0 +1,1 @@
+import{p as r}from"./index-CB21N9G0.js";const m={length:50,avoidAmbiguous:!0,characters:[{characters:r.upper,minimum:1},{characters:r.lower,minimum:1},{characters:r.digits,minimum:1},{characters:r.symbols,minimum:1}]};document.querySelector("#app").innerHTML=r.randomPassword(m);
