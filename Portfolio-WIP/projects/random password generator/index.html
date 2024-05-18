@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/vite-DcBtz0py.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/vite-DcBtz0py.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Password Generator</title>
-  <script type="module" crossorigin src="/assets/index-eixQEb08.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/index-CB21N9G0.js">
-  <link rel="stylesheet" crossorigin href="/assets/index-BEJrMbKE.css">
+    <script type="module" crossorigin src="./assets/index-DNAUDnw-.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/index-CB21N9G0.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CTQd5aQQ.css">
 </head>
 
 <body>
@@ -32,16 +33,28 @@
 
         <div class="options">
 
-            <label for="length">
-                <div>
-                    Password Length
-                    <input type="number" name="length" id="length" value="8" min="8" max="128" autocomplete="off" />
+            <div class="col-left">
+                <div class="strength">
+                    <div id="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <p id="strength-text"></p>
                 </div>
-                <input type="range" id="length_range" name="length_range" value="8" min="8" max="128"
-                    autocomplete="off" />
-            </label>
+                <label for="length">
+                    <div>
+                        Password Length
+                        <input type="number" name="length" id="length" value="8" min="8" max="128" autocomplete="off" />
+                    </div>
+                    <input type="range" id="length_range" name="length_range" value="8" min="8" max="128"
+                        autocomplete="off" />
+                </label>
+            </div>
 
-            <div>
+            <div class="check">
                 <label for="uppercase">
                     ABC
                     <input type="checkbox" name="uppercase" id="uppercase" checked autocomplete="off" />
@@ -63,7 +76,8 @@
         </div>
         <button id="generate">Generate</button>
     </div>
-
+
+
 </body>
 
 </html>
