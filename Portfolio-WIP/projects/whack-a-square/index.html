@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="output.css">
+  <title>Whack-A-Square</title>
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center gap-10 dark:bg-stone-800 dark:text-white select-none">
+  <h1 class="text-8xl font-bold">Whack-A-Square</h1>
+
+  <div id="game" class="grid grid-cols-3 border border-black dark:border-stone-300 transition-transform">
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+    <div
+      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
+      <button
+        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
+        disabled></button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 items-center justify-center text-center gap-5">
+    <div id="score" class="flex gap-1 text-lg font-bold justify-end items-center">Score: <p>0</p>
+    </div>
+    <button id="start"
+      class="dark:bg-indigo-400 border-4 dark:border-indigo-200 bg-indigo-200 border-indigo-400 px-5 py-2.5 rounded-full text-3xl flex justify-center items-center">Start!</button>
+    <div id="high" class="flex gap-1 text-lg font-bold justify-start items-center">HighScore: <p>0</p>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
