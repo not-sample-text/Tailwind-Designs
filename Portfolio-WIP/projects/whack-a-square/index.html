@@ -3,82 +3,145 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="output.css">
   <title>Whack-A-Square</title>
 </head>
 
-<body class="h-screen flex flex-col justify-center items-center gap-10 dark:bg-stone-800 dark:text-white select-none">
-  <h1 class="text-8xl font-bold">Whack-A-Square</h1>
-
-  <div id="game" class="grid grid-cols-3 border border-black dark:border-stone-300 transition-transform">
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
-    </div>
-    <div
-      class="bg-stone-300 dark:bg-stone-600 w-32 h-32 border-2 border-black dark:border-stone-300 flex justify-center items-center">
-      <button
-        class="bg-indigo-400 w-[80%] h-[80%] transition-transform duration-75 hover:scale-105 disabled:bg-transparent"
-        disabled></button>
+<body
+  class="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-200 dark:from-indigo-950 dark:to-purple-950 text-stone-900 dark:text-stone-50">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-5xl lg:text-7xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-8">Whack-A-Square</h1>
+    <div class="flex flex-col lg:flex-row gap-8 justify-center items-center lg:items-start">
+      <div class="order-2 lg:order-1">
+        <div id="game" class="grid grid-cols-3 bg-white dark:bg-stone-800 rounded-lg shadow-lg p-4">
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+          <div
+            class="square-container relative bg-indigo-50 dark:bg-stone-700 w-24 h-24 m-1 rounded-md flex justify-center items-center transition-colors duration-200">
+            <div class="overlay"></div>
+            <button
+              class="bg-indigo-400 w-[80%] h-[80%] rounded-md transition-all duration-75 hover:scale-105 disabled:bg-transparent"
+              disabled="disabled"></button>
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 flex flex-col items-center lg:items-start gap-4">
+        <div id="times" class="bg-white dark:bg-stone-800 rounded-lg shadow-lg p-6">
+          <h2 class="text-2xl font-semibold mb-4 text-center lg:text-left">Game Stats</h2>
+          <div class="flex gap-4">
+            <div class="w-60">
+              <p class="text-lg font-medium ">Score:
+                <span id="score" class="font-bold text-indigo-600 dark:text-indigo-400">0</span>
+              </p>
+              <p class="text-lg font-medium">High Score:
+                <span id="high" class="font-bold text-indigo-600 dark:text-indigo-400">0</span>
+              </p>
+              <p class="text-lg font-medium">Accuracy:<span id="acc" class="font-bold">
+                  <span class="text-emerald-500">0</span> / <span class="text-red-500">0 </span>(0%)</span></p>
+            </div>
+            <div class="w-48">
+              <p class="text-lg font-medium">Last Time:
+                <span id="time" class="font-bold text-indigo-600 dark:text-indigo-400">0</span>ms
+              </p>
+              <p class="text-lg font-medium">Avg Time:
+                <span id="avg" class="font-bold text-indigo-600 dark:text-indigo-400">0</span>ms
+              </p>
+              <p class="text-lg font-medium">Best Time:
+                <span id="best" class="font-bold text-indigo-600 dark:text-indigo-400">0</span>ms
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg p-6 w-full">
+          <h2 class="text-2xl font-semibold mb-4 text-center lg:text-left">Game Settings</h2>
+          <div class="flex flex-col items-center lg:items-start gap-4">
+            <div class="flex items-center gap-2"><label for="gameDuration" class="text-lg font-medium">Game
+                Duration:</label><select id="gameDuration"
+                class="w-40 text-lg px-2 py-1 border rounded bg-indigo-50 dark:bg-stone-700">
+                <option value="0">Unlimited</option>
+                <option value="10">10 seconds</option>
+                <option value="30" selected="selected">30 seconds</option>
+                <option value="60">1 minute</option>
+                <option value="120">2 minutes</option>
+                <option value="300">5 minutes</option>
+              </select></div><button id="start"
+              class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-full text-xl transition-colors duration-300">Start
+              Game</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="grid grid-cols-3 items-center justify-center text-center gap-5">
-    <div id="score" class="flex gap-1 text-lg font-bold justify-end items-center">Score: <p>0</p>
-    </div>
-    <button id="start"
-      class="dark:bg-indigo-400 border-4 dark:border-indigo-200 bg-indigo-200 border-indigo-400 px-5 py-2.5 rounded-full text-3xl flex justify-center items-center">Start!</button>
-    <div id="high" class="flex gap-1 text-lg font-bold justify-start items-center">HighScore: <p>0</p>
+  <div id="endGameModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+    <div class="bg-white dark:bg-stone-700 p-8 rounded-lg shadow-lg max-w-md w-full">
+      <h2 class="text-2xl font-bold mb-4 text-center text-stone-900 dark:text-stone-50">Game Over!</h2>
+      <div class="space-y-2">
+        <p class="text-lg"><span class="font-semibold">Final Score: </span><span id="modalScore"></span></p>
+        <p class="text-lg"><span class="font-semibold">High Score: </span><span id="modalHighScore"></span></p>
+        <p class="text-lg"><span class="font-semibold">Last Click Time: </span><span id="modalLastTime"></span>ms</p>
+        <p class="text-lg"><span class="font-semibold">Average Click Time: </span><span id="modalAvgTime"></span>ms</p>
+        <p class="text-lg"><span class="font-semibold">Best Click Time: </span><span id="modalBestTime"></span>ms</p>
+        <p class="text-lg"><span class="font-semibold">Accuracy: </span><span id="modalAccuracy"></span></p>
+      </div><button id="closeModal"
+        class="mt-6 w-full bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600 transition-colors">Close</button>
     </div>
   </div>
-
-
   <script src="app.js"></script>
 </body>
 
