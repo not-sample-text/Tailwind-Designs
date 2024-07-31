@@ -1,292 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio - Frontend Developer</title>
   <link rel="stylesheet" href="./css/output.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto+Slab&display=swap"
-    rel="stylesheet">
-  <script defer src="./js/tooltip.js"></script>
-  <script defer src="./js/formclass.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <title>Document</title>
+  <style>
+
+  </style>
 </head>
 
-<body>
-
-  <nav>
-    <ul>
-      <li>
-        <a href="#home">
-          <i class="ti ti-home" title="Home"></i>
-          <div class="tooltip">
-            <div class="square"></div>
-            <p>Home</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#about">
-          <i class="ti ti-info-circle" title="About"></i>
-          <div class="tooltip">
-            <div class="square"></div>
-            <p>About</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          <i class="ti ti-icons" title="Projects"></i>
-          <div class="tooltip">
-            <div class="square"></div>
-            <p>Projects</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <i class="ti ti-at" title="Contact"></i>
-          <div class="tooltip">
-            <div class="square"></div>
-            <p>Contact</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="header" id="home">
-
-    <div class="head-img">
-      <div class="head-text">
-        <p class="text-5xl max-xl:text-center max-md:text-3xl">Say hello to your new <span
-            class="font-bold text-indigo-600 dark:text-indigo-400 ">developer</span></p>
-        <div>
-          <p>I started web development at 18 through YouTube tutorials, now I'm a Frontend Web Developer.</p>
-          <p>I have tried webdesign but found I excel in front end development.</p>
-          <p>I'm also very much into photography, check out my <a href="https://www.instagram.com/tonny.2821/"
-              target="_blank" class=" underline">Instagram</a>!</p>
-        </div>
-      </div>
-      <img src="./assets/me_lol.jpg" class="aspect-square w-80 max-lg:w-60 max-md:w-52 rounded-lg " alt="">
-    </div>
-
-    <div class="button-next">
-      <a href="#about"><button class="button begin">Interested?</button></a>
-      <a href="#about"><i class="ti ti-chevrons-down"></i></a>
-    </div>
-  </div>
-
-  <div class="main">
-    <div id="about" class="chapter">
-
-      <div class="cat-title">
-        <h2>About me</h2>
-        <div class="line"></div>
-      </div>
-
-      <div>
-
-        <div class="long-paragraph">
-          <p>I began my journey into web development at the age of 18 through online tutorials on YouTube.
-            Nowadays, I mainly work as a Frontend Web Developer, focusing on making the front part of websites looking
-            and working great.</p>
-          <p> At first, I experimented with design, but I quickly recognized that I excelled more in coding. As a
-            result, I dedicated myself to enhancing my coding skills, and you can explore some of my web projects in the
-            Projects section.</p>
-          <p>
-            Beyond coding, I have a deep passion for photography and share my work on Instagram, striving to showcase
-            captivating content. I'm also actively looking for new job opportunities where I can use my skills and learn
-            and grow.
-            Let's connect and see what we can do together!
-          </p>
-          <a href="#contact"><button>Contact</button></a>
-        </div>
-
-        <div>
-          <p class="tech">What I know:</p>
-          <div class="chips">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Tailwind</p>
-            <p>SCSS</p>
-            <p>JavaScript</p>
-            <p>Node</p>
-            <p>Terminal</p>
-            <p>GIT</p>
-            <p>Github</p>
-            <p>Responsive Design</p>
-            <p>PHP Basics</p>
-            <p>Wordpress Basics</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <div id="projects" class="chapter">
-
-      <div class="cat-title">
-        <h2>My Projects!</h2>
-        <div class="line"></div>
-      </div>
-
-      <div>
-        <div class="card">
-          <a href="./projects/binarelectronics-landing/" target="_blank">
-            <img src="./assets/binar-landing.png" alt="" class="bg-img">
-            <p class="card-title">Binar Electronics Landing </p>
-            <p class="card-desc">Landing page for Binar Electronics. Made responsibly and responsively with HTML and
-              TailwindCSS <br> Fair warning, it only has light mode! </p>
-          </a>
-          <a href="https://github.com/not-sample-text/binarelectronics-landing" target="_blank">View Source code
-            &rarr;</a>
-        </div>
-        <div class="card">
-          <a href="./projects/Discord Sidebar/" target="_blank">
-            <img src=" ./assets/discord.png" alt="" class="bg-img">
-            <p class="card-title">Discord Sidebar Clone</p>
-            <p class="card-desc">Crafted with HTML, Tailwind, and JavaScript, this project offers a
-              Discord-inspired sidebar. It features customizable server icons with smoothly scaling tooltips on hover,
-              making it perfect for web design projects.</p>
-          </a>
-          <a href="https://github.com/not-sample-text/Tailwind-Designs/tree/master/Toolbar%20Clones/Discord%20Sidebar"
-            target="_blank">View Source code &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/The Blob/">
-            <img src="./assets/blob.png" alt="" class="bg-img">
-            <p class="card-title">Mouse-Following Blob</p>
-            <p class="card-desc">Made as a fun experiment, the 'Mouse Following Blob' project presents an
-              engaging user experience. A blob trails the user's cursor, creating a visually pleasing effect. The smooth
-              motion, coupled with a slight delay, gives the impression of seamless cursor tracking.</p>
-          </a>
-          <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/The%20Blob"
-            target="_blank">View Source code &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/Weather App Web/">
-            <img src="./assets/weather.png" alt="" class="bg-img">
-            <p class="card-title">Local Weather App</p>
-            <p class="card-desc">Web page designed to dynamically fetch and display real-time weather information,
-              offering up-to-date temperature data along with clothing recommendations. Styled responsively with CSS.
-            </p>
-          </a>
-          <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Weather%20App%20Web"
-            target="_blank">View Source code &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/hamburger menu/">
-            <img src="./assets/hamburger-menu.png" alt="" class="bg-img">
-            <p class="card-title">Hamburger Menu</p>
-            <p class="card-desc">A neat HTML document featuring an interactive hamburger menu. It's spiced up with
-              Tailwind CSS for some sleek styling, including dark mode. </p>
-          </a>
-          <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/hamburger%20menu"
-            target="_blank">View Source code &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/Clock Screen Saver/">
-            <img src="./assets/clock.png" alt="" class="bg-img">
-            <p class="card-title">Clock Screen Saver</p>
-            <p class="card-desc">Experience the 'Clock Screen Saver,' a real-time display of the current time and date.
-              This engaging screensaver ensures precision by updating every second. It features elegant 'Sofia Sans
-              Condensed' and [DSEG7] fonts. Licensed under MIT.</p>
-          </a>
-          <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Clock%20Screen%20Saver"
-            target="_blank">View Source code &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/random password generator/index.html">
-            <img src="./assets/rpg.png" alt="" class="bg-img">
-            <p class="card-title">Random password generator</p>
-            <p class="card-desc">Generate secure, customizable passwords with options for length, uppercase, lowercase,
-              numbers, and special characters. Web-based and user-friendly. Licensed under MIT.</p>
-          </a>
-          <a href="https://github.com/not-sample-text/random-password-generator" target="_blank">View Source code
-            &rarr;</a>
-        </div>
-        <div class="card">
-          <a target="_blank" href="./projects/whack-a-square/index.html">
-            <img src="./assets/whack-a-square.png" alt="" class="bg-img">
-            <p class="card-title">Whack-A-Square</p>
-            <p class="card-desc">Enjoy the "Whack-a-Square" game where you click on appearing squares to score points.
-              Features include real-time score tracking. Web-based and interactive. Licensed under MIT.</p>
-          </a>
-          <a href="https://github.com/not-sample-text/whack-a-square/tree/main" target="_blank">View Source code
-            &rarr;</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="footer chapter">
-
-    <div class="cat-title">
-      <h2>Contact me!</h2>
-      <div class="line"></div>
-    </div>
-
-    <div id="contact">
-
-      <div>
-        <form action="" method="post" class="form-container">
-          <div class="flex-container mb-6 max-md:flex-col">
-            <div class="flex-1 relative group">
-              <input type="text" required id="name" class="form-input">
-              <label for="name">Name</label>
-            </div>
-            <div class="flex-1 relative">
-              <label for="email">Email</label>
-              <input type="email" required id="email" class="form-input">
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <div class="relative">
-              <label for="subject">Subject</label>
-              <input type="text" required id="subject" class="form-input mb-6">
-            </div>
-            <div class="relative">
-              <label for="messsage">Message</label>
-              <textarea required class="form-input" id="messsage"></textarea>
-            </div>
-          </div>
-          <button type="submit" value="Submit" class="submit-button">Send messsage</button>
-        </form>
-      </div>
-
-      <ul>
-        <li>
-          <a href="https://github.com/not-sample-text" target="_blank">
-            <i class="ti ti-brand-github"></i>
-            <p>Github</p>
-          </a>
+<body class="bg-stone-100 text-stone-900 dark:bg-stone-900 dark:text-stone-100 font-sans">
+  <header class="fixed top-0 left-0 w-full bg-white dark:bg-stone-800 shadow-md z-50">
+    <nav class="container mx-auto px-4 py-3">
+      <ul class="flex justify-center space-x-4 md:space-x-8 overflow-x-auto whitespace-nowrap">
+        <li><a href="#home"
+            class="text-stone-700 dark:text-stone-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-1">Home</a>
         </li>
-        <li>
-          <a href="https://codepen.io/tonyyy69" target="_blank">
-            <i class="ti ti-brand-codepen"></i>
-            <p>CodePen</p>
-          </a>
+        <li><a href="#about"
+            class="text-stone-700 dark:text-stone-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-1">About</a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/tonny.2821/" target="_blank">
-            <i class="ti ti-brand-instagram"></i>
-            <p>Instagram</p>
-          </a>
+        <li><a href="#projects"
+            class="text-stone-700 dark:text-stone-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-1">Projects</a>
         </li>
-        <li>
-          <a href="mailto:not-sample-text@proton.me" target="_blank">
-            <i class="ti ti-mail"></i>
-            <p>Email</p>
-          </a>
+        <li><a href="#contact"
+            class="text-stone-700 dark:text-stone-300 hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-1">Contact</a>
         </li>
       </ul>
-    </div>
-  </div>
+    </nav>
+  </header>
 
+  <main class="pt-12">
+    <section id="home"
+      class="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+      <div class="text-center">
+        <h1 class="text-5xl font-bold mb-4">Hello, I'm Antonio</h1>
+        <p class="text-2xl mb-8">Frontend Developer & Photography Enthusiast</p>
+        <a href="#about"
+          class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-indigo-100 transition duration-300">Learn
+          More</a>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white dark:bg-stone-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <img src="./assets/me_lol.jpg" alt="Antonio" class="rounded-lg shadow-lg max-w-full h-auto">
+          </div>
+          <div class="md:w-1/2 md:pl-12">
+            <p class="text-lg mb-6">I began my journey into web development at the age of 18 through online tutorials on
+              YouTube. Nowadays, I mainly work as a Frontend Web Developer, focusing on making the front part of
+              websites look and work great.</p>
+            <p class="text-lg mb-6">Beyond coding, I have a deep passion for photography and share my work on Instagram,
+              striving to showcase captivating content.</p>
+            <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">HTML</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">CSS</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">Tailwind</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">SCSS</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">React</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">NodeJS</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">Terminal</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">Git</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">Github</span>
+              <span class="bg-stone-200 dark:bg-stone-700 px-3 py-1 rounded-full text-sm">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-stone-100 dark:bg-stone-900">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project cards go here -->
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/binar-landing.png" alt="Binar Electronics Landing" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Binar Electronics Landing</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Landing page for Binar Electronics. Made responsibly
+                  and responsively with HTML and TailwindCSS.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/binarelectronics-landing" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/binarelectronics-landing" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/discord.png" alt="Discord Sidebar Recreation" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Discord Sidebar Clone</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Crafted with HTML, Tailwind, and JavaScript, this
+                  project offers a Discord-inspired sidebar. It features customizable server icons with smoothly scaling
+                  tooltips on hover, making it perfect for web design projects.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/Tailwind-Designs/tree/master/Toolbar%20Clones/Discord%20Sidebar"
+                target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/discord-sidebar" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/blob.png" alt="Mouse-Following Blob" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Mouse-Following Blob</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Made as a fun experiment, the 'Mouse Following Blob'
+                  project presents an engaging user experience. A blob trails the user's cursor, creating a visually
+                  pleasing effect. The smooth motion, coupled with a slight delay, gives the impression of seamless
+                  cursor tracking.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/The%20Blob"
+                target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/the-blob" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/weather.png" alt="Local Weather App" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Local Weather App</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Web page designed to dynamically fetch and display
+                  real-time weather information, offering up-to-date temperature data along with clothing
+                  recommendations. Styled responsively with CSS.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Weather%20App%20Web"
+                target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/weather-app-web" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/hamburger-menu.png" alt="Hamburger Menu" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Hamburger Menu</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">A neat HTML document featuring an interactive
+                  hamburger menu. It's spiced up with Tailwind CSS for some sleek styling, including dark mode.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/hamburger%20menu"
+                target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/hamburger-menu" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/clock.png" alt="Clock Screen Saver" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Clock Screen Saver</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Experience the 'Clock Screen Saver,' a real-time
+                  display of the current time and date. This engaging screensaver ensures precision by updating every
+                  second. It features elegant 'Sofia Sans Condensed' and [DSEG7] fonts. Licensed under MIT.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/Silly-Little-Side-Projects/tree/main/Clock%20Screen%20Saver"
+                target="_blank" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/clock-screen-saver" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/rpg.png" alt="Random password generator" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Random password generator</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Generate secure, customizable passwords with options
+                  for length, uppercase, lowercase, numbers, and special characters. Web-based and user-friendly.
+                  Licensed under MIT.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/random-password-generator" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/random-password-generator" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+          <div class="bg-white dark:bg-stone-800 rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+            <img src="./assets/whack-a-square.png" alt="Whack-A-Square" class="w-full h-48 object-cover">
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex-grow">
+                <h3 class="text-xl font-semibold mb-2">Whack-A-Square</h3>
+                <p class="text-stone-600 dark:text-stone-400 mb-4">Enjoy the "Whack-a-Square" game where you click on
+                  appearing squares to score points. Features include real-time score tracking. Web-based and
+                  interactive. Licensed under MIT.</p>
+              </div>
+              <a href="https://github.com/not-sample-text/whack-a-square" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline">View Source →</a>
+              <a href="./projects/whack-a-square" target="_blank"
+                class="text-indigo-600 dark:text-indigo-400 hover:underline mt-auto">View Demo →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="py-20 bg-white dark:bg-stone-800">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+        <form class="max-w-lg mx-auto">
+          <div class="mb-8 form-input-container">
+            <input type="text" id="name" name="name" placeholder=" "
+              class="w-full px-3 py-2 border border-stone-300 dark:border-stone-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-stone-700 dark:text-white"
+              required>
+            <label for="name" class="text-stone-700 dark:text-stone-300">Name</label>
+          </div>
+          <div class="mb-8 form-input-container">
+            <input type="email" id="email" name="email" placeholder=" "
+              class="w-full px-3 py-2 border border-stone-300 dark:border-stone-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-stone-700 dark:text-white"
+              required>
+            <label for="email" class="text-stone-700 dark:text-stone-300">Email</label>
+          </div>
+          <div class="mb-8 form-input-container">
+            <textarea id="message" name="message" rows="4" placeholder=" "
+              class="w-full px-3 py-2 border border-stone-300 dark:border-stone-700 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-stone-700 dark:text-white"
+              required></textarea>
+            <label for="message" class="text-stone-700 dark:text-stone-300">Message</label>
+          </div>
+          <button type="submit"
+            class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">Send
+            Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-stone-900 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2024 not_sample_text. All rights reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://github.com/not-sample-text" target="_blank" class="hover:text-indigo-400">GitHub</a>
+        <a href="https://codepen.io/tonyyy69" target="_blank" class="hover:text-indigo-400">CodePen</a>
+        <a href="https://www.instagram.com/tonny.2821/" target="_blank" class="hover:text-indigo-400">Instagram</a>
+        <a href="mailto:not-sample-text@proton.me" class="hover:text-indigo-400">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
